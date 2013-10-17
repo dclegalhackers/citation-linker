@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+var linker = require('./'),
+    concat = require('concat-stream');
+
+process.stdin.pipe(concat(linkify));
+
+function linkify(input) {
+    process.stdout.write(linker.addCitationLinks(input.toString()));
+}

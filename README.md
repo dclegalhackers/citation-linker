@@ -8,6 +8,14 @@ Adds links to legal citations within Markdown text.
 $ npm install citation-linker
 ```
 
+as a binary:
+
+```
+$ npm install -g citation-linker
+```
+
+### Example
+
 ```javascript
 citationLinker = require("citation-linker");
 

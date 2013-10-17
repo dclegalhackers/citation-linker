@@ -1,16 +1,27 @@
 {
   "name": "citation-linker",
   "version": "0.0.1",
-  "description": "",
+  "description": "Adds links to legal citations within Markdown text",
   "main": "lib/citation-linker.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha -R spec"
   },
-  "repository": "",
+  "bin": {
+    "citation-linker": "citation-linker"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dclegalhackers/citation-linker.git"
+  },
   "author": "Alan deLevie",
   "license": "BSD",
   "dependencies": {
-    "citation": "*",
-    "pagedown": "*"
+    "citation": "~0.6.3",
+    "pagedown": "~1.1.0",
+    "concat-stream": "~1.0.1"
+  },
+  "devDependencies": {
+    "expect.js": "~0.2.0",
+    "mocha": "~1.13.0"
   }
 }
